@@ -40,8 +40,8 @@ app.post('/', (req, res) => {
   const oHeader = { alg: 'HS256', typ: 'JWT' }
 
   const oPayload = {
-    appKey: process.env.ZOOM_MEETING_SDK_KEY || '03uqTkXhQPqfdu8REBC8sg',
-    sdkKey: process.env.ZOOM_MEETING_SDK_KEY || 'BSNwxYaO1mw2c41iSaWnfvPGpQU1dBqR',
+    appKey: '03uqTkXhQPqfdu8REBC8sg',
+    sdkKey: 'BSNwxYaO1mw2c41iSaWnfvPGpQU1dBqR',
     mn: meetingNumber,
     role,
     iat,
